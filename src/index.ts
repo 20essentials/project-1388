@@ -383,6 +383,7 @@ export const controls = defineControls({
       updateSubgroupsStatus();
     },
   },
+  
   //@ts-ignore
   'Test Resolution': import.meta?.env.DEV && {
     onButtonClick: () =>
