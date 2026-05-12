@@ -383,7 +383,8 @@ export const controls = defineControls({
       updateSubgroupsStatus();
     },
   },
-  'Test Resolution': import.meta.env.DEV && {
+  //@ts-ignore
+  'Test Resolution': import.meta?.env.DEV && {
     onButtonClick: () =>
       [defaultCompute, subgroupCompute]
         .map((fn) => tgpu.resolve([fn], { enableExtensions: ['subgroups'] }))
